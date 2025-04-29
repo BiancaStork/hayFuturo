@@ -160,20 +160,101 @@
             text-align: center;
             padding: 30px 20px;
         }
-    </style>
+        /* Botón hamburguesa */
+        .menu-toggle {
+            display: none;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            width: 30px;
+            height: 25px;
+            cursor: pointer;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .menu-toggle span {
+            display: block;
+            height: 4px;
+            background: #F04E27;
+            border-radius: 2px;
+        }
+
+        /* Ocultar menú nav por defecto en móvil */
+        @media (max-width: 768px) {
+        nav {
+            display: none;
+            flex-direction: column;
+            background: #434343;
+            position: absolute;
+            top: 50px;
+            right: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 1000;
+        }
+        nav a {
+            margin: 15px 0;
+            display: block;
+        }
+    /* Mostrar botón hamburguesa */
+        .menu-toggle {
+            display: flex;
+        }
+    /* Cuando nav tiene clase 'active' mostrarlo */
+        nav.active {
+        display: flex;
+        }
+}
+@media (max-width: 768px) {
+  /* Elimina padding de las propuestas */
+  .propuesta {
+    padding: 0 !important;
+    border-radius: 0 !important;
+    background: none !important;
+  }
+  /* Elimina margen de las imágenes */
+  .propuesta-icono {
+    margin: 0 !important;
+    display: block;
+  }
+  /* Elimina padding de la grid */
+  .propuestas-grid {
+    padding: 0 !important;
+    gap: 0 !important;
+  }
+  /* Elimina padding/margen de la sección propuestas */
+  #propuestas.seccion {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  /* Elimina los <br> agregando display: none si quieres */
+  #propuestas br {
+    display: none;
+  }
+}
+
+</style>
 </head>
 <body>
 
     <!-- Encabezado -->
     <header>
-        <!-- <h1>Nombre del Partido</h1> -->
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#propuestas">Propuestas</a>
-            <a href="#nosotros">Sobre Nosotros</a>
-            <a href="#contacto">Contacto</a>
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav id="nav-menu">
+          <a href="#inicio">Inicio</a>
+          <a href="#propuestas">Propuestas</a>
+          <a href="#nosotros">Sobre Nosotros</a>
+          <a href="#contacto">Contacto</a>
         </nav>
-    </header>
+      </header>
+      
 
     <!-- Sección Principal -->
     <section class="hero" id="inicio">
@@ -275,6 +356,14 @@
             <a href="#" style="color: #c13584; text-decoration: none;">Instagram</a>
         </p>
     </footer>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>
