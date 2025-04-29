@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Hay Futuro</title>
+    <style>
+       /* Reset global */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Estilos generales */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Encabezado */
+        header {
+            background: #FFC91B;
+            color: white;
+            padding: 0; /* Solo padding lateral y superior */
+            
+        }
+        header h1 {
+           margin: 0;
+            padding: 10px 0; /* Añade padding solo al título si necesitas espacio */
+        }
+
+        nav {
+            margin-top: 0;
+            text-align: center;
+            padding: 10px 0; /* Espacio interno para los enlaces */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            /* font-weight: bold; */
+        }
+
+        /* Sección Hero */
+        .hero {
+            background: url('./assets/1920x1080 portada ailin.png') center/contain no-repeat;
+            min-height: 100vh;
+            margin: 0; /* Doble seguridad */
+            padding: 0; /* Elimina padding inicial */
+            text-align: center;
+            display: flex;
+            align-items: center;
+        justify-content: center;
+}
+
+
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+
+        /* Secciones */
+        .seccion {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .seccion h2 {
+            color: #F04E27;
+            margin-bottom: 30px;
+        }
+
+        /* Propuestas */
+        .propuestas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2px;
+            padding: 0 3%;
+        }
+
+        .propuesta {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .propuesta-icono {
+            width: 40vw;             /* 15% del ancho de la pantalla */
+            height: 40vw;            /* Mantener relación 1:1 */
+            max-width: 500px;        /* Límite para pantallas grandes */
+            max-height: 500px;       /* Evitar que crezca demasiado */
+             object-fit: contain;       /* Enfoque inteligente */
+             margin: 0 auto 15px;     /* Centrado y espacio inferior */
+}
+
+.texto-justificado {
+        text-align: justify;
+        line-height: 1.6;       /* Mejor interlineado */
+        word-spacing: 0.05em;   /* Espacio entre palabras */
+        hyphens: auto;          /* Separación silábica */
+    }
+   
+    .lista-alineada {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 300px; /* Opcional: para contener el ancho */
+    }
+
+    .lista-alineada p {
+        margin: 0; /* Elimina márgenes predeterminados */
+        padding: 8px 0; /* Espaciado controlado */
+        line-height: 1.4; /* Altura de línea uniforme */
+    }
+
+        /* Testimonios */
+        .testimonios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 10%;
+        }
+
+        .testimonio {
+            border-left: 4px solid #FFA200;
+            padding-left: 15px;
+            font-style: italic;
+        }
+
+        /* Contacto */
+        .contacto-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contacto-form input,
+        .contacto-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+
+        .contacto-form button {
+            background: #1a4a8d;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <!-- <h1>Nombre del Partido</h1> -->
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#propuestas">Propuestas</a>
+            <a href="#nosotros">Sobre Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección Principal -->
+    <section class="hero" id="inicio">
+        <!-- <h1>Construyendo un futuro mejor para todos</h1> -->
+       
+    </section>
+
+    <!-- Propuestas -->
+<section class="seccion" id="propuestas">
+    <!-- <h2>Nuestras Propuestas</h2> -->
+    <img src="./assets/linea.png" style="width: 100vw; max-width: 100%; display: block; margin: 0; height: 25px;" >
+    <div class="propuestas-grid">
+        <!-- Propuesta 1 con icono -->
+        <div class="propuesta">
+            <img src="./assets/1350 AILIN4.jpg" alt="AcercaDe" class="propuesta-icono" >
+             <h3 style="color: #434343;">Hola! Soy Ailin Ferreira</h3> 
+            <p class="texto-justificado"> Tengo 25 años, soy abogada y me estoy especializando en recursos tributarios 📚
+                Nací en la ciudad de Eldorado, después de estudiar mi carrera, volví con todas las ganas de ejercer mi profesión de forma independiente💼
+                Tuve una experiencia muy enriquecedora como Prosecretaria Legislativa del Área Legal y Técnica en el Concejo Deliberante. 
+                Además, este año participé activamente en el Parlamento Provincial de la Mujer 2025 en la Cámara de Representantes. Oportunidades increíbles que me dieron herramientas y conocimientos sobre la importante función de legislar 💡</p>
+        </div>
+
+        <!-- Propuesta 2 con imagen lateral -->
+        <div class="propuesta">
+            <div class="propuesta-contenedor">
+                <img src="./assets/IMG_8277 grupal 2.jpg" alt="Equipo" class="propuesta-icono">
+                <div>
+                    <h3 style="color: #434343;">Mi Equipo</h3>
+                    <p class="texto-justificado">💡 Estoy emocionada de presentar a los cinco candidatos que me acompañan en esta lista, comprometidos con el cambio y el progreso. Cada uno de ellos aporta su experiencia y pasión para trabajar por nuestra comunidad. </p>
+                    <div class="lista-centrada">
+                        <p> 🟧 Abelardo Giavotto </p>
+                        <p> 🟨 Nancy Caballero</p>
+                        <p> 🟧 Edu Neumann</p>
+                        <p> 🟨 Naty Ríos</p>
+                        <p> 🟧 Matias Stork</p>
+                    </div>
+                      
+             
+                </div>
+            </div>
+        </div>
+
+        <!-- Propuesta 3 con fondo
+        <div class="propuesta" style="background-image: url('./assets/transparencia-fondo.jpg');">
+            <div class="propuesta-contenido">
+                <h3>Transparencia</h3>
+                <p>Plataformas digitales abiertas para el seguimiento del gasto público en tiempo real.</p>
+            </div>
+        </div> -->
+    </div>
+    <br>
+    <br>
+    <img src="./assets/linea.png" style="width: 100vw; max-width: 100%; display: block; margin: 0; height: 25px;" >
+   </section>
+
+
+    <!-- Testimonios -->
+    <section class="seccion" style="background: #f5f5f5;">
+        
+        <!-- <h2>Lo que dicen nuestros simpatizantes</h2> -->
+        <div class="testimonios-grid">
+            <div class="testimonio">
+               
+                <h3 style="color: #434343;">"En estas elecciones me sentí motivada a involucrarme activamente, 
+                    por ello decidí presentarme como candidata a concejal"</h3>
+            </div>
+            <!-- <div class="testimonio">
+                <p>"Por fin una opción política transparente y comprometida con el cambio real."</p>
+                <p>- María Gómez, Activista</p>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section class="seccion" id="nosotros">
+        <!-- <h2>Sobre Nuestro Partido</h2>
+        <p>Somos un movimiento ciudadano comprometido con el desarrollo sostenible y la justicia social. Nuestra misión es representar los intereses de todos los sectores de la sociedad mediante políticas inclusivas y participativas.</p> -->
+    </section>
+
+    <!-- Contacto -->
+    <section class="seccion" id="contacto">
+        <!-- <h2>Únete al Cambio</h2>
+        <div class="contacto-form">
+            <form action="#">
+                <input type="text" placeholder="Nombre Completo" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <textarea placeholder="Tu Mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div> -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 HayFuturoEldorado | Todos los derechos reservados</p>
+        <p style="margin-top: 10px;">
+            <a href="#" style="color: #4dabf7; text-decoration: none;">Facebook</a> | 
+            <a href="#" style="color: #1da1f2; text-decoration: none;">Twitter</a> | 
+            <a href="#" style="color: #c13584; text-decoration: none;">Instagram</a>
+        </p>
+    </footer>
+
+</body>
+</html>
