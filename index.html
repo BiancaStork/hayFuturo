@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Hay Futuro</title>
@@ -32,53 +34,54 @@
        
     </section>
 
-    <!-- Propuestas -->
+  <!-- Propuestas -->
 <section class="seccion" id="propuestas">
-    <!-- <h2>Nuestras Propuestas</h2> -->
-    <img src="./assets/linea.png" style="width: 100vw; max-width: 100%; display: block; margin: 0; height: 25px;" >
-    <div class="propuestas-grid">
-        <!-- Propuesta 1 con icono -->
-        <div class="propuesta">
-            <img src="./assets/1350 AILIN4.jpg" alt="AcercaDe" class="propuesta-icono" >
-             <h3 style="color: #434343;">Hola! Soy Ailin Ferreira</h3> 
-            <p class="texto-justificado"> Tengo 25 años, soy abogada y me estoy especializando en recursos tributarios 📚
-                Nací en la ciudad de Eldorado, después de estudiar mi carrera, volví con todas las ganas de ejercer mi profesión de forma independiente💼
-                Tuve una experiencia muy enriquecedora como Prosecretaria Legislativa del Área Legal y Técnica en el Concejo Deliberante. 
-                Además, este año participé activamente en el Parlamento Provincial de la Mujer 2025 en la Cámara de Representantes. Oportunidades increíbles que me dieron herramientas y conocimientos sobre la importante función de legislar 💡</p>
-        </div>
+    <!-- Línea decorativa -->
+    <img src="./assets/linea.png" style="width: 100vw; max-width: 100%; display: block; margin: 0; height: 25px;">
 
-        <!-- Propuesta 2 con imagen lateral -->
-        <div class="propuesta">
-            <div class="propuesta-contenedor">
-                <img src="./assets/IMG_8277 grupal 2.jpg" alt="Equipo" class="propuesta-icono">
-                <div>
-                    <h3 style="color: #434343;">Mi Equipo</h3>
-                    <p class="texto-justificado">💡 Estoy emocionada de presentar a los cinco candidatos que me acompañan en esta lista, comprometidos con el cambio y el progreso. Cada uno de ellos aporta su experiencia y pasión para trabajar por nuestra comunidad. </p>
-                    <div style="text-align: left;">
-                        <p> 🟧 Abelardo Giavotto </p>
-                        <p> 🟨 Nancy Caballero</p>
-                        <p> 🟧 Edu Neumann</p>
-                        <p> 🟨 Naty Ríos</p>
-                        <p> 🟧 Matias Stork</p>
+    <div class="container py-4">
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6">
+                <div class="card h-100">
+                    <img src="./assets/Card1.jpg" class="card-img-top img-fluid" style="max-height: 300px; object-fit: contain;">
+                    <div class="card-body">
+                        <p class="card-title small fw-bold" style="color: #434343;">Hola! Soy Ailin Ferreira</p>
+                        <p class="card-text texto-justificado" style="font-size: 12px; line-height: 1.4;">
+                            Tengo 25 años, soy abogada y me estoy especializando en recursos tributarios 📚
+                            Nací en la ciudad de Eldorado, después de estudiar mi carrera, volví con todas las ganas de ejercer mi profesión de forma independiente💼 <br>
+                            Tuve una experiencia muy enriquecedora como Prosecretaria Legislativa del Área Legal y Técnica en el Concejo Deliberante. <br>
+                            Además, este año participé activamente en el Parlamento Provincial de la Mujer 2025 en la Cámara de Representantes. Oportunidades increíbles que me dieron herramientas y conocimientos sobre la importante función de legislar 💡
+                        </p>
                     </div>
-                      
-             
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6">
+                <div class="card h-100">
+                    <img src="./assets/Card2.jpg" class="card-img-top img-fluid" style="max-height: 300px; object-fit: contain;">
+                    <div class="card-body">
+                        <h3 class="card-title small fw-bold" style="color: #434343;">Mi Equipo</h3>
+                        <p class="card-text texto-justificado" style="font-size: 12px; line-height: 1.4;">
+                            💡 Estoy emocionada de presentar a los cinco candidatos que me acompañan en esta lista, comprometidos con el cambio y el progreso. <br>
+                            Cada uno de ellos aporta su experiencia y pasión para trabajar por nuestra comunidad.
+                        </p>
+                        <ul class="list-unstyled mb-0 " style="text-align: left; font-size: 12px;">
+                            <li>🟧 Abelardo Giavotto</li>
+                            <li>🟨 Nancy Caballero</li>
+                            <li>🟧 Edu Neumann</li>
+                            <li>🟨 Naty Ríos</li>
+                            <li>🟧 Matias Stork</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Propuesta 3 con fondo
-        <div class="propuesta" style="background-image: url('./assets/transparencia-fondo.jpg');">
-            <div class="propuesta-contenido">
-                <h3>Transparencia</h3>
-                <p>Plataformas digitales abiertas para el seguimiento del gasto público en tiempo real.</p>
-            </div>
-        </div> -->
     </div>
-    <br>
-    <br>
-    <img src="./assets/linea.png" style="width: 100vw; max-width: 100%; display: block; margin: 0; height: 25px;" >
-   </section>
+    
+</section>
+
+    
 
 
     <!-- Testimonios -->
@@ -87,8 +90,9 @@
         <!-- <h2>Lo que dicen nuestros simpatizantes</h2> -->
         <div class="testimonios-grid">
             <div class="testimonio">
-               
-                <h3 style="color: #434343;">"En estas elecciones me sentí motivada a involucrarme activamente, 
+                <i class="bi bi-chat-quote fs-1 text-gris-oscuro"></i> <br> 
+                <p></p>              
+                <h3 class="fs-6 fst-italic" style="color: #434343;">"En estas elecciones me sentí motivada a involucrarme activamente, 
                     por ello decidí presentarme como candidata a concejal"</h3>
             </div>
             <!-- <div class="testimonio">

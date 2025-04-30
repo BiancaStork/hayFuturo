@@ -55,7 +55,7 @@
 
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: 1rem;
             text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
         }
 
@@ -90,6 +90,10 @@
             max-height: 500px;       /* Evitar que crezca demasiado */
              object-fit: contain;       /* Enfoque inteligente */
              margin: 0 auto 15px;     /* Centrado y espacio inferior */
+}
+
+.text-gris-oscuro {
+    color: #434343;
 }
 
 .texto-justificado {
