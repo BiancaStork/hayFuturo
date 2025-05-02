@@ -4,27 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <title>Hay Futuro</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./style.css">
+      <title>Hay Futuro</title>
     
 </head>
+
 <body>
 
     <!-- Encabezado -->
     <header>
-        <div class="menu-toggle" id="menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <nav id="nav-menu">
-          <a href="#inicio">Inicio</a>
-          <a href="#propuestas">Propuestas</a>
-          <a href="#nosotros">Sobre Nosotros</a>
-          <a href="#contacto">Contacto</a>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#propuestas">Propuestas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#nosotros">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li> -->
+              </ul>
+            </div>
+          </nav>
       </header>
       
 
@@ -47,11 +65,12 @@
                     <img src="./assets/Card1.jpg" class="card-img-top img-fluid" style="max-height: 250px; object-fit: contain;">
                     <div class="card-body">
                         <p class="card-title small fw-bold" style="color: #434343;">Hola! Soy Ailin Ferreira</p>
-                        <p class="card-text texto-justificado" style="font-size: 12px; line-height: 1.4;">
-                            Tengo 25 años, soy abogada y me estoy especializando en recursos tributarios 📚
-                            Nací en la ciudad de Eldorado, después de estudiar mi carrera, volví con todas las ganas de ejercer mi profesión de forma independiente💼 <br>
-                            Tuve una experiencia muy enriquecedora como Prosecretaria Legislativa del Área Legal y Técnica en el Concejo Deliberante. <br>
-                            Además, este año participé activamente en el Parlamento Provincial de la Mujer 2025 en la Cámara de Representantes. Oportunidades increíbles que me dieron herramientas y conocimientos sobre la importante función de legislar 💡
+                        <p class="card-text texto-justificado" style="font-size: 14px; line-height: 1.4;">
+                            Tengo 25 años, soy abogada y me estoy especializando en recursos tributarios.
+                            Nací en la ciudad de Eldorado, después de estudiar mi carrera, volví con todas las ganas de ejercer mi profesión de forma independiente</p>
+                        <p class="card-text texto-justificado " style="font-size: 14px; line-height: 1.4;">    
+                            Tuve una experiencia muy enriquecedora como Prosecretaria Legislativa del Área Legal y Técnica en el Concejo Deliberante.
+                            Además, este año participé activamente en el Parlamento Provincial de la Mujer 2025 en la Cámara de Representantes. Oportunidades increíbles que me dieron herramientas y conocimientos sobre la importante función de legislar
                         </p>
                     </div>
                 </div>
@@ -62,8 +81,8 @@
                     <img src="./assets/Card2.jpg" class="card-img-top img-fluid" style="max-height: 250px; object-fit: contain;">
                     <div class="card-body">
                         <h3 class="card-title small fw-bold" style="color: #434343;">Mi Equipo</h3>
-                        <p class="card-text texto-justificado" style="font-size: 12px; line-height: 1.4;">
-                            💡 Estoy emocionada de presentar a los cinco candidatos que me acompañan en esta lista, comprometidos con el cambio y el progreso. <br>
+                        <p class="card-text texto-justificado" style="font-size: 14px; line-height: 1.4;">
+                            Estoy emocionada de presentar a los cinco candidatos que me acompañan en esta lista, comprometidos con el cambio y el progreso.
                             Cada uno de ellos aporta su experiencia y pasión para trabajar por nuestra comunidad.
                         </p>
                         <ul class="list-unstyled mb-0 " style="text-align: left; font-size: 12px;">
@@ -119,14 +138,8 @@
             <a href="https://www.instagram.com/hayfuturo.ok/" target="_blank" rel="noopener noreferrer" style="color: #FFE400; text-decoration: none;">Instagram</a>
         </p>
     </footer>
-<script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const navMenu = document.getElementById('nav-menu');
-
-  menuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });
-</script>
+<!-- Bootstrap 5 JS Bundle (al final del body) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

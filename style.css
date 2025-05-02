@@ -13,51 +13,17 @@
             line-height: 1.6;
         }
 
-        /* Encabezado */
-        header {
-            background: #434343;
-            color: white;
-            padding: 0; /* Solo padding lateral y superior */
-            
-        }
-        header h1 {
-           margin: 0;
-            padding: 10px 0; /* Añade padding solo al título si necesitas espacio */
-        }
-
-        nav {
-            margin-top: 0;
-            text-align: center;
-            padding: 10px 0; /* Espacio interno para los enlaces */
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            /* font-weight: bold; */
-        }
-
-        /* Sección Hero */
-        .hero {
-            background: url('./assets/portada.png') center/contain no-repeat;
-            min-height: 120vh;
-         
-         
-}
-/* Para móviles o pantallas pequeñas */
-@media only screen and (max-width: 768px) {
-    .hero {
-        min-height: 30vh;
-
-    }
-}
-
-
-        .hero h1 {
+        .navbar {
+            background-color: #434343 !important;
+            padding-top: 0.25rem;   /* Menos espacio arriba */
+            padding-bottom: 0.25rem; /* Menos espacio abajo */
+            min-height: 40px;        /* Opcional: fuerza un alto mínimo menor */
+          }
+          .navbar-toggler {
+            padding: 0.15rem 0.5rem;
             font-size: 1rem;
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-        }
+          }
+      
 
         /* Secciones */
         .seccion {
@@ -159,52 +125,7 @@
             text-align: center;
             padding: 30px 20px;
         }
-        /* Botón hamburguesa */
-        .menu-toggle {
-            display: none;
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            width: 30px;
-            height: 25px;
-            cursor: pointer;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .menu-toggle span {
-            display: block;
-            height: 4px;
-            background: #F04E27;
-            border-radius: 2px;
-        }
-
-        /* Ocultar menú nav por defecto en móvil */
-        @media (max-width: 768px) {
-        nav {
-            display: none;
-            flex-direction: column;
-            background: #434343;
-            position: absolute;
-            top: 50px;
-            right: 0;
-            width: 100%;
-            text-align: center;
-            z-index: 1000;
-        }
-        nav a {
-            margin: 15px 0;
-            display: block;
-        }
-    /* Mostrar botón hamburguesa */
-        .menu-toggle {
-            display: flex;
-        }
-    /* Cuando nav tiene clase 'active' mostrarlo */
-        nav.active {
-        display: flex;
-        }
-}
+       
 @media (max-width: 768px) {
   /* Elimina padding de las propuestas */
   .propuesta {
@@ -229,9 +150,6 @@
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
-  /* Elimina los <br> agregando display: none si quieres */
-  #propuestas br {
-    display: none;
-  }
+  
 }
 
