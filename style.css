@@ -15,12 +15,13 @@
 
         .navbar {
             background-color: #434343 !important;
-            padding-top: 0.25rem;   /* Menos espacio arriba */
+            padding-top: 0.45rem;   /* Menos espacio arriba */
             padding-bottom: 0.25rem; /* Menos espacio abajo */
-            /* min-height: 40px;        Opcional: fuerza un alto mínimo menor */
+            min-height: 40px;       /* Opcional: fuerza un alto mínimo menor*/
           }
+
           .navbar-toggler {
-            padding: 0.15rem 0.5rem;
+            /* padding: 0.15rem 0.5rem; */
             font-size: 1rem;
           }
       
