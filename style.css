@@ -24,7 +24,65 @@
             /* padding: 0.15rem 0.5rem; */
             font-size: 1rem;
           }
-      
+
+          .carousel-indicators [data-bs-target] {
+            background-color: #FFE400;       /* Opcional: para que sean más visibles */
+            border: 1px solid #FFA200;
+          }
+          
+          .carousel-indicators .active {
+            background-color: #FFA200;
+            opacity: 2;
+          }
+         /* Botones de anterior/siguiente */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #FFe400;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+  content: '';
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-top: 0.2rem solid black;
+  border-right: 0.2rem solid black;
+}
+.carousel-control-prev-icon::after {
+  transform: rotate(-135deg);
+  margin-left: 0.3rem;
+}
+.carousel-control-next-icon::after {
+  transform: rotate(45deg);
+  margin-right: 0.3rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  top: 60%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.carousel-control-prev {
+  left: 10px;
+}
+.carousel-control-next {
+  right: 10px;
+}
+.carousel-item > .d-flex {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+
 
         /* Secciones */
         .seccion {
