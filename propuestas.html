@@ -126,23 +126,54 @@
     </div>
     
   </div>
-  <div class="text-center mt-2">
+ 
+  <section class="my-5">
+    <div class="container" style="max-width: 600px;">
+      <h4 class="mb-4 text-center fs-6">¿Qué te parecen estas propuestas? ¡Tu opinión nos importa! Déjanos tu comentario 👇</h4>
+      <form action="mailto:ailinconcejal@hayfuturo.com.ar" method="POST" enctype="text/plain" class="needs-validation" novalidate>
+        <div class="mb-3 fs-6">
+          <label for="name" class="form-label fs-6">Nombre</label>
+          <input type="text" class="form-control" id="name" name="Nombre" placeholder="Tu nombre" required>
+          <div class="invalid-feedback fs-6">Por favor ingresa tu nombre.</div>
+        </div>
+        <div class="mb-3 fs-6">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" name="Email" placeholder="nombre@ejemplo.com" required>
+          <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
+        </div>
+        <div class="mb-3 fs-6">
+          <label for="message" class="form-label">Comentario</label>
+          <textarea class="form-control" id="message" name="Comentario" rows="5" placeholder="Escribe tu opinión aquí..." required></textarea>
+          <div class="invalid-feedback">El comentario no puede estar vacío.</div>
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-secondary btn-lg">Enviar comentario</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <div class="text-center">
     <a href="index.html" class="btn btn-secondary btn-lg fs-6" style="display: inline-block;">
       Volver a la pagina Principal <i class="bi bi-hand-index-thumb"></i>
     </a>
   </div>
-  
-</section>
-<!-- Testimonios -->
-<section class="bg-light py-5 text-center">
-  
-  </section>
 
-  <!-- Seccion de Videos -->
-  <section class="seccion" id="videos">
-
-  </section>
-
+  <script>
+  // Bootstrap 5 validación básica
+  (() => {
+    'use strict'
+    const forms = document.querySelectorAll('.needs-validation')
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+  </script>
   
 
     <!-- Contacto -->
