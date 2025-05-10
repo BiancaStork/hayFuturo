@@ -97,6 +97,15 @@
   }
   
   
+  ul li a {
+    /* color: #FF6600; Cambia este color por el que quieras */
+    text-decoration: none; /* Esto quita el subrayado, opcional */
+  }
+
+  ul li a:hover {
+    color: #FF3300; /* Color cuando pasas el mouse encima */
+  }
+
   
 
         /* Secciones */
