@@ -30,8 +30,8 @@
         #btnTop {
              display: none; /* Oculto por defecto */
              position: fixed;
-             bottom: 30px; /* Distancia desde abajo */
-             right: 30px;  /* Distancia desde la derecha */
+             bottom: 10px; /* Distancia desde abajo */
+             right: 10px;  /* Distancia desde la derecha */
              z-index: 9999;
              border: none;
              outline: none;
@@ -48,19 +48,8 @@
               color:#434343;
          }
          #btnTop i {
-              font-size: 2rem;
+              font-size: 1.5rem;
          }
-         /* @media (max-width: 768px) {
-  #btnTop {
-    padding: 10px 12px;
-    font-size: 18px;
-    bottom: 20px;
-    right: 20px;
-  }
-  #btnTop i {
-    font-size: 1.5rem;
-  }
-} */
 
 
           .carousel-indicators [data-bs-target] {
