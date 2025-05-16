@@ -23,7 +23,45 @@
           .navbar-toggler {
             /* padding: 0.15rem 0.5rem; */
             font-size: 1rem;
-          }
+ 
+         }
+
+
+        #btnTop {
+             display: none; /* Oculto por defecto */
+             position: fixed;
+             bottom: 30px; /* Distancia desde abajo */
+             right: 30px;  /* Distancia desde la derecha */
+             z-index: 9999;
+             border: none;
+             outline: none;
+             background-color: transparent; /* Color de fondo */
+             color: #F04E27;
+             cursor: pointer;
+             padding: 14px 18px;
+             border-radius: 50%;
+             font-size: 24px;
+             box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+             transition: background 0.3s;
+         }
+         #btnTop:hover {
+              color:#434343;
+         }
+         #btnTop i {
+              font-size: 2rem;
+         }
+         /* @media (max-width: 768px) {
+  #btnTop {
+    padding: 10px 12px;
+    font-size: 18px;
+    bottom: 20px;
+    right: 20px;
+  }
+  #btnTop i {
+    font-size: 1.5rem;
+  }
+} */
+
 
           .carousel-indicators [data-bs-target] {
             background-color: #FFE400;       /* Opcional: para que sean más visibles */
@@ -105,8 +143,6 @@
   ul li a:hover {
     color: #FF3300; /* Color cuando pasas el mouse encima */
   }
-
-  
 
   
 
